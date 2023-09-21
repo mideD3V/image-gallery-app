@@ -91,22 +91,25 @@ const Drag = () => {
     <div className="image-container">
       {pictureList.map((picture, index) => {
         return (
-          <Draggable>
-            <div className="img-ctn">
-              <Picture
-                key={index}
-                url={picture.url}
-                id={picture.id}
-                alt="scene"
-                draggable
-                // onDragStart={() => {dragPicture.current = index}}
-                // onDragStart={() => console.log('hello')}
-                onDragEnter={() => (dragOverPicture.current = index)}
-                onDragEnd={handleSort}
-                onDragOver={(e) => e.preventDefault()}
-              />
-            </div>
-          </Draggable>
+          <>
+            
+            <Draggable>
+              <div className="img-ctn">
+                <Picture
+                  key={index}
+                  url={picture.url}
+                  id={picture.id}
+                  alt="scene"
+                  draggable
+                  // onDragStart={() => {dragPicture.current = index}}
+                  // onDragStart={() => console.log('hello')}
+                  onDragEnter={() => (dragOverPicture.current = index)}
+                  onDragEnd={handleSort}
+                  onDragOver={(e) => e.preventDefault()}
+                />
+              </div>
+            </Draggable>
+          </>
         );
       })}
     </div>
