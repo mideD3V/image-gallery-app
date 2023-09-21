@@ -23,7 +23,7 @@
 }
 
 .App-link {
-  
+
 }
 
 @keyframes App-logo-spin {
@@ -82,7 +82,7 @@ form input:focus {
 
 .input-icon {
   position: absolute;
-  right: 10%;
+  right: 13%;
   top: 5px;
 }
 
