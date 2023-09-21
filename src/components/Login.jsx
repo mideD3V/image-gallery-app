@@ -1,12 +1,7 @@
 import React, { useState } from "react";
-import { Link, Route } from "react-router-dom";
-import { AiFillEyeInvisible, AiOutlineUser } from "react-icons/ai";
-import { BiLogInCircle } from "react-icons/bi";
-import Home from "./Home";
+import { HiEyeOff } from "react-icons/hi";
+import { BiLogInCircle, BiSolidUser } from "react-icons/bi";
 import { useNavigate } from "react-router-dom";
-
-
-
 
 
 const Login = () => {
@@ -39,7 +34,7 @@ const navigate = useNavigate()
             onChange={(e) => setUsername(e.target.value)}
             value={username}
           />
-          <AiOutlineUser className="input-icon" />
+          <BiSolidUser className="input-icon" />
         </label>
         <label>
           <input
@@ -50,7 +45,7 @@ const navigate = useNavigate()
             onChange={(e) => setPassword(e.target.value)}
             value={password}
           />
-          <AiFillEyeInvisible className="input-icon" />
+          <HiEyeOff className="input-icon" />
         </label>
         <button type="button" onClick={handleLogin}>
           Login{" "}
