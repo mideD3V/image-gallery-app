@@ -1,0 +1,10 @@
+#loader {
+  display:;
+  width: 10vw;
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  border-radius: 50%;
+  /* background-color: white; */
+  opacity: .5;
+}
