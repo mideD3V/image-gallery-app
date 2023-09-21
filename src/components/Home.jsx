@@ -22,7 +22,7 @@ const Home = () => {
   ) : (
     <div id="home">
       <h1> Welcome to my Gallery</h1>
-        <p>(Double click on image to drag arround)</p>
+        <p>(Click/double click on image to drag arround)</p>
         <nav>
           <Search />
           <Link to='/' className="link">Logout</Link>

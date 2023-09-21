@@ -106,3 +106,9 @@ form button:hover,
 .link {
   text-decoration: none;
 }
+.error{
+  display: none;
+  color: red;
+  font-size: 12px;
+  margin-top: -2rem;
+}

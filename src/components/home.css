@@ -8,9 +8,11 @@ p {
   margin: 10px 20px 20px;
   color: aliceblue;
 }
+
 .image-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+
   gap: 15px;
   margin: 0 auto;
   grid-template-areas: "image1";
@@ -89,7 +91,7 @@ nav {
   align-items: center;
   gap: 1rem;
 }
-#searchbar{
+#searchbar {
   width: 20vw;
 }
 #searchbar input {
@@ -97,12 +99,56 @@ nav {
   width: 100%;
   border: none;
 }
-#searchbar input:focus{
+#searchbar input:focus {
   border: 1px solid #0d1b1e;
 }
 
 nav .link {
-color: #c3dbc5;
+  color: #c3dbc5;
   padding: 0.25rem 1rem;
   text-decoration: underline;
 }
+
+@media screen and (max-width: 850px) {
+  .image-container {
+    display: gris;
+    padding: 4rem 1rem;
+    width: 100vw;
+    height: max-content;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .image-containerx {
+  }
+  #searchbar {
+    position: absolute;
+    top: 5rem;
+    right: 25vw;
+    width: 50vw;
+  }
+  nav .link {
+    position: absolute;
+    top: -1.5rem;
+    right: 5vw;
+    font-size: 14px;
+  }
+
+}
+
+@media screen and (max-width: 370px) {
+#searchbar {
+    position: absolute;
+    top: 10rem;
+    right: 25vw;
+    width: 45vw;
+  }
+
+  nav .link {
+    position: absolute;
+    top: -1.5rem;
+    right: 5vw;
+    font-size: 12px;
+  }
+
+}
+
+
