@@ -23,43 +23,43 @@ import Picture from "./Picture";
 const Drag = () => {
   const [pictureList, setPictureList] = useState([
     {
-      id: 1,
+      id: 'road',
       url: P1,
     },
     {
-      id: 2,
+      id: 'boy alone',
       url: P2,
     },
     {
-      id: 3,
+      id: 'bridge',
       url: P3,
     },
     {
-      id: 4,
+      id: 'sand bay',
       url: P4,
     },
     {
-      id: 5,
+      id: 'swim girl',
       url: P5,
     },
     {
-      id: 6,
+      id: 'city boy',
       url: P6,
     },
     {
-      id: 7,
+      id: 'lake view',
       url: P7,
     },
     {
-      id: 8,
+      id: 'sky high',
       url: P8,
     },
     {
-      id: 9,
+      id: 'mountain',
       url: P9,
     },
     {
-      id: 10,
+      id: 'ocean view',
       url: P10,
     }
   ]);
