@@ -93,6 +93,8 @@ nav {
 }
 #searchbar {
   width: 20vw;
+  display: flex;
+  align-items: center;
 }
 #searchbar input {
   padding: 0.5rem;
@@ -101,6 +103,12 @@ nav {
 }
 #searchbar input:focus {
   border: 1px solid #0d1b1e;
+}
+
+#searchbar .icon{
+  transform: scale(1.5);
+  margin-left: -2rem;
+
 }
 
 nav .link {

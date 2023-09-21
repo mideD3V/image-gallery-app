@@ -6,6 +6,9 @@ import { useEffect, useState } from "react";
 import Search from "./Search";
 import { Link } from "react-router-dom";
 
+import { TbLogout } from "react-icons/tb";
+import { RiSearchFill } from "react-icons/ri";
+
 const Home = () => {
   // Use state for loader
   const [getLoader, setGetLoader] = useState(true);
@@ -22,11 +25,13 @@ const Home = () => {
   ) : (
     <div id="home">
       <h1> Welcome to my Gallery</h1>
-        <p>(Click/double click on image to drag arround)</p>
-        <nav>
-          <Search />
-          <Link to='/' className="link">Logout</Link>
-        </nav>
+      <p>(Click/double click on image to drag arround)</p>
+      <nav>
+        <Search />
+        <Link to="/" className="link">
+          Logout <TbLogout />{" "}
+        </Link>
+      </nav>
 
       <Drag />
 
