@@ -56,6 +56,7 @@ p {
   width: 100%;
   height: 35vh;
   transition: ease-in-out 0.35s;
+  border-radius: 4px;
 }
 .image1:hover {
   transform: scale(1.12);
@@ -82,7 +83,7 @@ p {
 nav {
   position: absolute;
   top: 2rem;
-  right: 0;
+  right: 3rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -113,7 +114,7 @@ nav {
 cursor: pointer;
 }
 
-nav .link {
+nav .loglink {
   color: #c3dbc5;
   padding: 0.25rem 1rem;
   text-decoration: underline;

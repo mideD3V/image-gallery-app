@@ -28,7 +28,7 @@ const Home = () => {
       <p>(Click/double click on image to drag arround)</p>
       <nav>
         <Search />
-        <Link to="/" className="link">
+        <Link to="/" className="loglink">
           Logout <TbLogout />{" "}
         </Link>
       </nav>
