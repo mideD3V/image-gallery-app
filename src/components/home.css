@@ -96,6 +96,8 @@ nav {
   width: 20vw;
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 #searchbar input {
   padding: 0.5rem;
@@ -118,6 +120,8 @@ nav .loglink {
   color: #c3dbc5;
   padding: 0.25rem 1rem;
   text-decoration: underline;
+  display: flex;
+
 }
 
 @media screen and (max-width: 850px) {
@@ -128,18 +132,18 @@ nav .loglink {
     height: max-content;
     grid-template-columns: repeat(2, 1fr);
   }
-  .image-containerx {
-  }
+
   #searchbar {
     position: absolute;
     top: 5rem;
-    right: 25vw;
-    width: 50vw;
+    right: 15vw;
+    width: 55vw;
+    margin: 0 auto;
   }
-  nav .link {
+  nav .loglink {
     position: absolute;
-    top: -1.5rem;
-    right: 5vw;
+    top: -1rem;
+    right: 0;
     font-size: 14px;
   }
 
@@ -148,18 +152,23 @@ nav .loglink {
 @media screen and (max-width: 370px) {
 #searchbar {
     position: absolute;
-    top: 10rem;
-    right: 25vw;
-    width: 45vw;
+    top: 7rem;
+    right: 12vw;
+    width: 55vw;
   }
 
-  nav .link {
+  nav .loglink {
     position: absolute;
     top: -1.5rem;
-    right: 5vw;
+    right: 0rem;
     font-size: 12px;
-  }
 
+  }
+  #home h1{
+  font-size: 24px;
 }
+}
+
+
 
 
