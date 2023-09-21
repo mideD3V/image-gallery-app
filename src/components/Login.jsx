@@ -9,6 +9,7 @@ const navigate = useNavigate()
 
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [isValid, setIsValid] = useState(false);
 
 
   function handleLogin() {
@@ -16,13 +17,24 @@ const navigate = useNavigate()
       console.log("Correct");
       // <Route path="/home" element={<Home />} />;
       return navigate('/home')
+    } else {
+          console.log("ERROR!!!");
+          
+      
     }
-    console.log("ERROR!!!");
+
+
+
   }
 
   return (
     <div id="login">
       <p> Welcome Back Here! </p>
+      <span className={
+        
+        
+        
+  !isValid ? 'error' : 'error-null'}>Enter correct details</span>
 
       <form action="submit" method="get">
         <label>
