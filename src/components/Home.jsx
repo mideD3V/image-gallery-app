@@ -17,7 +17,7 @@ const Home = () => {
   useEffect(() => {
     setTimeout(() => {
       setGetLoader(false);
-    }, 4000);
+    }, 3000);
   });
 
   return getLoader ? (

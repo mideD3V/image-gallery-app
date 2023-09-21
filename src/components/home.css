@@ -124,6 +124,16 @@ nav .loglink {
 
 }
 
+@media screen and (max-width: 1050px) {
+#searchbar {
+    position: absolute;
+    top: 5rem;
+    right: 20vw;
+    width: 50vw;
+  }
+}
+
+
 @media screen and (max-width: 850px) {
   .image-container {
     display: gris;
