@@ -78,7 +78,6 @@ p {
 /* NAV STYLING */
 
 nav {
-  background-color: deeppink;
   position: absolute;
   top: 2rem;
   right: 0;
@@ -90,13 +89,20 @@ nav {
   align-items: center;
   gap: 1rem;
 }
+#searchbar{
+  width: 20vw;
+}
 #searchbar input {
   padding: 0.5rem;
-  width: 70%;
-  background-color: blue;
+  width: 100%;
+  border: none;
+}
+#searchbar input:focus{
+  border: 1px solid #0d1b1e;
 }
 
 nav .link {
 color: #c3dbc5;
   padding: 0.25rem 1rem;
+  text-decoration: underline;
 }
