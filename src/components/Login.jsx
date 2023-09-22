@@ -13,7 +13,7 @@ const Login = () => {
 
 
   function handleLogin() {
-    if (username === "user@example" && password === "1Password") {
+    if (username === "user@example.com" && password === "1Password") {
       console.log("Correct");
       // <Route path="/home" element={<Home />} />;
       return navigate("/home");
