@@ -41,7 +41,8 @@ const Login = () => {
             value={username}
             style={
               username === "user@example"
-                ? { borderColor: "green" }
+                ? { borderColor: "green" } :
+                username === "" ? { borderColor: "" }
                 : { borderColor: "red" }
             }
           />
@@ -58,6 +59,8 @@ const Login = () => {
             style={
               password === "1Password"
                 ? { borderColor: "green" }
+                : password === ""
+                ? { borderColor: " " }
                 : { borderColor: "red" }
             }
           />
