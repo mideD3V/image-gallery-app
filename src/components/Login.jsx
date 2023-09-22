@@ -3,38 +3,32 @@ import { HiEyeOff } from "react-icons/hi";
 import { BiLogInCircle, BiSolidUser } from "react-icons/bi";
 import { useNavigate } from "react-router-dom";
 
-
 const Login = () => {
-const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [isValid, setIsValid] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
+  const [errorBorder, setErrorBorder] = useState("red");
 
+  const [isValid, setIsValid] = useState(false);
 
   function handleLogin() {
     if (username === "user@example" && password === "1Password") {
       console.log("Correct");
       // <Route path="/home" element={<Home />} />;
-      return navigate('/home')
+      return navigate("/home");
     } else {
-          console.log("ERROR!!!");
-          
-      
+      console.log("ERROR!!!");
+      setErrorMessage("Wrong details. Try again");
+
     }
-
-
-
   }
 
   return (
     <div id="login">
       <p> Welcome Back Here! </p>
-      <span className={
-        
-        
-        
-  !isValid ? 'error' : 'error-null'}>Enter correct details</span>
+      <span className="error">{errorMessage}</span>
 
       <form action="submit" method="get">
         <label>
@@ -45,6 +39,11 @@ const navigate = useNavigate()
             placeholder="Username"
             onChange={(e) => setUsername(e.target.value)}
             value={username}
+            style={
+              username === "user@example"
+                ? { borderColor: "green" }
+                : { borderColor: "red" }
+            }
           />
           <BiSolidUser className="input-icon" />
         </label>
@@ -56,6 +55,11 @@ const navigate = useNavigate()
             placeholder="Password"
             onChange={(e) => setPassword(e.target.value)}
             value={password}
+            style={
+              password === "1Password"
+                ? { borderColor: "green" }
+                : { borderColor: "red" }
+            }
           />
           <HiEyeOff className="input-icon" />
         </label>
