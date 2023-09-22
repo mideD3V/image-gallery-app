@@ -39,7 +39,7 @@ setErrorBorder('red')
             onChange={(e) => setUsername(e.target.value)}
             value={username}
             style={
-              username === "user@example"
+              username === "user@example.com"
                 ? { borderColor: "green" } :
                 username === "" ? { borderColor: "" }
                 : { borderColor: "red" }
