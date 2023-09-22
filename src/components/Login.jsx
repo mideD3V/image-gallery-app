@@ -9,9 +9,8 @@ const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
-  const [errorBorder, setErrorBorder] = useState("red");
+  const [errorBorder, setErrorBorder] = useState("");
 
-  const [isValid, setIsValid] = useState(false);
 
   function handleLogin() {
     if (username === "user@example" && password === "1Password") {
@@ -21,7 +20,7 @@ const Login = () => {
     } else {
       console.log("ERROR!!!");
       setErrorMessage("Wrong details. Try again");
-
+setErrorBorder('red')
     }
   }
 

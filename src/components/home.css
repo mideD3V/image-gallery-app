@@ -66,6 +66,13 @@ p {
   cursor: move;
   box-shadow: 0.5px 1px 1px 3px #0d1b1e;
 }
+figcaption{
+background-color: #0d1b1e;
+color: #c3dbc5;
+padding: .5rem 1rem;
+font-weight: bold;
+text-transform: capitalize;
+}
 
 .footer {
   color: #c3dbc5;
